@@ -1,0 +1,20 @@
+//기타 수정 사항 
+BoardGetList.js 
+- 페이징 블럭 처리(Pagenation 컴포넌트 사용) 코드 간소화
+- 검색 시 페이징 관련 이슈
+Pagenation.js
+- prevBlock 함수에서 onPageChange 로직 추가(이전 블록 끝 페이지로 이동)
+BoardManagement.js
+- 전체 글, 삭제 글 보기 버튼 클릭 시 선택했던 게시물 초기화 되도록 수정
+
+// 1. 관리자 페이지 게시글 삭제 시 확인 창 구현
+- dataBaseDelPost() 메서드에 자바 스크립트 내장 메서드 window.confirm()를 사용하여 삭제 확인 팝업 추가
+
+// 4. 댓글 삭제 로직 수정(중복 삭제 방지)
+BoardRead.js
+- axiosDeleteComment() 삭제 확인용 변수를 c.cb_comment_text 에서 c.comment_no 로 교체 
+- axiosDeleteComment() 메서드  onClick 이벤트, api 호출 함수 2곳 수정됨
+
+// 5. 삭제 댓글 처리(흔적 표시)
+BoardRead.js
+- 삼항 연산자를 사용 하여 기능 구현(좀 더 로직에 대한 이해 필요함)
