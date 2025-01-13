@@ -1,0 +1,4 @@
+리액트 page에 ModifyInfo.js, Mypage.js 추가.
+index.js에 라우터 <Route path='/mypage' element={<Mypage/>}/>
+        <Route path='/mypage/modifyInfo' element={<ModifyInfo/>}></Route> 두줄 추가.
+App.js 로그인박스 div에 {logStatus ? <Link to="/mypage"><button>마이페이지</button></Link> : ""} 추가.
