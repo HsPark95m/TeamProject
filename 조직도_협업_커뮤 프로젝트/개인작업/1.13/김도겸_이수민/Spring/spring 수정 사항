@@ -1,0 +1,14 @@
+[스프링]
+// 3. 게시글 최신 순 정렬
+PjBoardMapper.xml 
+- 글 리스트 불러오는 sql문에 order by cb_no desc 추가 했음(게시글 최신 순 정렬)
+
+// 4. 댓글 삭제 로직 수정(중복 삭제 방지)
+- 컨트롤러, 서비스, 매퍼 deleteComment 메서드의 매개변수 text => no 로 수정 
+- 수정된 매개변수 명에 맞게 Mapper.xml 의 deleteComment SQL 문 수정
+
+// 5. 삭제 댓글 처리(흔적 표시)
+PjBoardMapper.xml 
+- commentsRead쪽 sql문 수정
+CompanyBoardCommentDto.java
+- cb_comment_is_deleted 변수명 수정(오타 이슈)
