@@ -1,0 +1,12 @@
+[SQL]
+변동사항 없음
+
+최종 수정 파일들 
+리액트 - BoardGetList.js, Pagenation.js, BoardManagement.js, BoardRead.js
+스프링 - PjBoardController.java, PjBoardService.java, PjBoardServiceImpl.java, PjBoardMapper.java, PjBoardMapper.xml
+
+<게시판 기능 개선>
+
+(2) 검색어 강조 표시: 검색된 키워드를 Bold 처리하여 강조.
+
+2번만 남은 상황
