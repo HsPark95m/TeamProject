@@ -2,3 +2,8 @@
 index.js에 라우터 <Route path='/mypage' element={<Mypage/>}/>
         <Route path='/mypage/modifyInfo' element={<ModifyInfo/>}></Route> 두줄 추가.
 App.js 로그인박스 div에 {logStatus ? <Link to="/mypage"><button>마이페이지</button></Link> : ""} 추가.
+
+
+14일 할 것.
+1. spring이랑 react 연동해서 정보변경 누르면 아이디 비밀번호 바꾸게 할 것.
+2. 프로필 리액트 폴더에 있는 5가지 이미지 중 하나로 바꿀수 있게 하기 << 이거 생각좀 해야됨. 원래있던거 뜯어고쳐야
