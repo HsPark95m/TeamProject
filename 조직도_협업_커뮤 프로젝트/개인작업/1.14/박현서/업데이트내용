@@ -1,0 +1,9 @@
+1. (sql)project_issue_list, project_issue_comment 테이블 추가
+
+2. (react)ProjectList.js에서 각 협업프로젝트에 issue가 있는지 확인하는 axios문 추가 및 각 협업프로젝트란에 이슈등록 버튼 추가 및 issue있는지 확인후(issueCheck) 있으면 이슈리스트 버튼 추가 (아직 페이지 연결은 안됨)
+
+3. (spring)project_issue_list테이블을 참조해 issue가 있는지 확인하는 issueCheck문 및 getIssue, getComments(getIssue에 포함됨), IssueWrite문 추가
+
+4. (react)Issue.js, IssueWrite.js 작업 중 // 페이지 연결이 아직 미구현
+
+각 파일에 주석처리로 설명해둠
