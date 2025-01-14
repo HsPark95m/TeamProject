@@ -1,0 +1,15 @@
+(2) 검색어 강조 표시: 검색된 키워드를 Bold 처리하여 강조
+BoardGetList.js, BoardManagement.js, HighLightText.js(추가)
+검색어 강조 표시 기능을 구현 하기 위한 highlightText 유틸리티 함수 추가
+
+(5) 삭제 댓글 처리 (흔적 표시) ex)* 삭제된 댓글입니다 *
+삼항 연산자를 사용 하여 기능 구현 (완료)
+BoardRead.js
+
+버그수정
+검색시 발생한 자잘한 문제들 수정(일부 코드로 수정)
+BoardGetList.js, BoardManagement.js
+
+
+작성일 날짜 정보 (YYYY-MM-DD)만 나오도록 수정
+-BoardGetList.js, BoardManagement.js
