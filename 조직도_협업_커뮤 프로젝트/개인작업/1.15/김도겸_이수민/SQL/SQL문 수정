@@ -1,0 +1,4 @@
+-SQL-
+새로운 카테고리를 추가하거나 수정, 삭제하기 위해 company_board_category 테이블을 생성하여 관리한다 ex)"공지사항", "자유게시판", "질문과 답변"
+ 
+company_board_category 테이블 추가
