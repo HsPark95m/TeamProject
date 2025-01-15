@@ -1,0 +1,32 @@
+-수정된 파일-
+[React]
+App.js, Board.js, BoardManagement.js 수정
+
+[Spring]
+ PjBoardMapper.java, PjBoardMapper.xml, PjBoardService.java,
+PjBoardServiceImpl.java, PjBoardController.java 수정
+
+CompanyBoardCategoryDto.java 추가
+
+SearchDto.java(이름수정)
+
+[SQL]
+company_board_category 테이블 추가
+
+
+-추가된 파일-
+[Spring]
+CompanyBoardCategoryDto.java 추가
+
+[React]
+HighLightText.js
+
+[SQL]
+company_board_category 테이블 추가
+
+<게시판 기능 개선>
+1. 공지 글 상단 고정 : 공지 글 3개 상단 고정 처리 (수정 중)
+2. 인기 글 박스 : 조회수 높은 글 5개 정렬 (수정 중)
+3. 게시판 카테고리 관리 기능 추가 : 게시판 관리 페이지에서 담당(ex: 부서 별 카테고리) (수정 중)
+
++여기서 읽기 페이지 버튼 관련 이슈 존재함 (수정 해야됨)
