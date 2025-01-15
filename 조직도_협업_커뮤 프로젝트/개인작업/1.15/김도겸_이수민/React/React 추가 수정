@@ -1,0 +1,54 @@
+!React 로직 수정 및 추가!
+
+게시판 메인 페이지 공지 글, 인기 글 상단 로직 추가
+<App.js>
+{'board' === page && <Board page={BoardPageRoad} />} -> {'board' === page && <Board page={BoardPageRoad} readPage={readPageNo} />} (변경)
+
+<Board.js>
+Board.js에 useEffect를 사용하여 공지 글(notices)과 인기 글(popularPosts)을 가져옵니다.
+서버 API: http://localhost:8080/spring/companyBoard/getNoticeAndPopularPosts
+성공: 응답 데이터를 notices와 popularPosts 상태에 각각 저장.
+실패: 에러를 콘솔에 출력.
+
+게시글 클릭 시 조회수 증가 및 페이지 이동
+read(no) 함수 : 서버 API: http://localhost:8080/spring/companyBoard/hitsUp?no=${no}
+특정 게시글(no)의 조회수를 증가시키고 readPage 함수를 호출하여 상세 페이지로 이동.
+
+공지 글 박스
+notices 데이터를 반복(map)하여 공지 글을 렌더링.
+공지 글이 없으면 "공지 글이 없습니다." 메시지 출력.
+인기 글 박스
+popularPosts 데이터를 반복(map)하여 인기 글을 렌더링.
+인기 글이 없으면 "인기 글이 없습니다." 메시지 출력.
+
+App.js, Board.js 파일 수정
+-------------------------------------------------------------------------------------------------
+카테고리 추가&삭제 기능
+카테고리 별 리스트 표시 버튼 추가
+유틸 버튼(전체글 보기, 삭제글 보기, 선택글 삭제, 선택글 복구) 수정
+기타 자잘한 기능 추가 및 수정
+
+<BoardManagement.js>
+카테고리 관리
+axiosGetCategoryList: 서버에서 카테고리 리스트 가져오기.
+추가
+addBoardCategory: 새 카테고리 추가.
+중복 확인 후 서버에 요청.
+삭제
+deleteCategory: 특정 카테고리 삭제.
+
+<Board.js>
+카테고리 목록 가져오기 (axiosGetCategoryList)
+useEffect를 사용하여 컴포넌트가 처음 렌더링될 때 카테고리 목록을 서버에서 가져옵니다.
+서버 API: http://localhost:8080/spring/companyBoard/categoryList
+성공: 응답 데이터를 categoryList 상태에 저장.
+실패: 에러를 콘솔에 출력.
+
+카테고리 클릭 시:
+page('board_getList', c.cb_category_name) 호출로 해당 카테고리에 해당하는 게시글 목록으로 이동.
+
+카테고리 박스
+categoryList의 데이터를 반복(map)하여 렌더링.
+각 카테고리를 클릭하면 page 함수가 호출되고 해당 카테고리의 게시판 페이지로 이동.
+
+Board.js, BoardManagement.js 파일 수정
