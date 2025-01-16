@@ -1,0 +1,51 @@
+게시판 메인 페이지 공지 글, 인기 글 상단 로직 조회수, css 수정
+<Board.js>
+게시판, 관리자 게시판과 id 이름이 겹쳐서 id="post_title_link" -> id="post_title_b_link" 변경
+
+<Board.css>
+-공통 박스 스타일-
+#free_board_box, #hits_board_box:
+
+-공지사항 스타일-
+항목 디자인:
+클래스: .notice_item : Flexbox로 가로 정렬, 왼쪽 정렬, 밑줄 추가, 항목 간 간격 있음
+클래스: .notice_label : 배경= 주황색, 글자: 흰색, 크기= 작고 굵게, 둥근 모서리
+배경: 주황색, 글자: 흰색
+크기: 작고 굵게, 둥근 모서리
+ID: #notice_link : 검은색, 밑줄 없음, 넘칠 경우 ... 표시, 마우스 호버 시 파란색으로 변경
+클래스: .notice_hits : 연한 회색, 오른쪽 정렬, 고정 폭(50px)
+
+-인기 글 스타일-
+항목 디자인:
+클래스: .popular_item : Flexbox로 가로 정렬, 왼쪽 정렬, 밑줄 추가
+ID: #post_title_b_link : 검은색, 밑줄 없음, 넘칠 경우 ... 표시,마우스 호버 시 파란색으로 변경
+클래스: .post_hits : 연한 회색, 오른쪽 정렬, 고정 폭(50px)
+
+<BoardGetList.js>, <BoardManagement.js>
+-조회수 정렬 상태 관리-
+const [isHitsSorted, setIsHitsSorted] = useState(false); 추가
+
+-조회수 정렬 함수-
+handleSortByHits() 조회정렬 함수, setIsHitsSorted(!isHitsSorted); 정렬 상태 반전 추가
+
+-조회수 정렬 번튼 추가-
+<button onClick={handleSortByHits} style={{width: '30px'}}> {isHitsSorted ? '🔼' : '🔽' } </button> 조회수 정렬 버튼
+
+
+
+------------------------------------------------------------------------------------------
+카테고리 로직 추가 및 수정
+-App.js-
+readPageNo 메서드 수정
+BoardRead 컴포넌트의 props 삭제(category={boardCategory})
+
+-BoardManagement.js-
+카테고리 삭제 시 경고 확인 창 추가
+<div id=button_box>버튼 관련 수정(코드 간소화, 일부 기능 개선)
+
+-BoardRead.js-
+관리 페이지 접근 시와 게시판 페이지 접근 시의 기능 분리
+글 정보 불러올 때 cb_category를 따로 상태변수에 저장하여 기존의 props
+로 받아오던 category 데이터를 상태변수 category 데이터로 대체
+
+
