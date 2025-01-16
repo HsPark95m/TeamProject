@@ -1,0 +1,9 @@
+(React)
+IssueList.js, IssueWrite.js, IssueRead.js 3개의 파일을 새로 제작 및 index.js에 라우터 설정 
+projectList.js에 Link 연결 및 IssueList, Write, Read 서로 간 Link 및 navigate를 통한 연결
+
+(Spring)
+Issue작성 및 일기를 위한 API문 5개 추가 (getIssue, getIssueByIssueNo, issueWrite, issueCommentWrite, issueClose)
+
+(SQL)
+변경x
