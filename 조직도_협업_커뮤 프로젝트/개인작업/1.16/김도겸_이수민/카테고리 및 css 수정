@@ -1,0 +1,11 @@
+현재 진행 현황
+[개발중인 코드 or 이슈]
+-(이슈)관리자 페이지에서 BoardRead.js 접근 후 새로고침 시 adAc 값이 초기화 되어
+게시판 접근 판정으로 바뀌는 이슈(sessionStorage or BrowserRouter 사용하면
+해결 가능할듯?)
+
+[수정된 파일]
+리액트 - App.js, BoardManagement.js, BoardRead.js, Board.js, BoardGetList.js
+css-Board.css
+
+스프링 - PjBoardServiceImpl.java, PjBoardMapper.java, PjBoardMapper.xml
