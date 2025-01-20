@@ -1,0 +1,27 @@
+이슈 개선사항
+
+(클리어)1. 이슈리스트 open / close 두 탭으로 분리 (버튼 사용)
+IssueList.js에서 받아온 issue데이터 필터링(issue_is_closed값에따라)을 통해 분리 
+
+(클리어)2. closed 된 이슈 재오픈 기능(버튼) 추가 / 댓글달기 버튼 비활성화 
+IssueRead.js에서 받아온 issue데이터의 issue_is_closed에 따라 버튼 활성화/비활성화
+
+3. closed할 시 closedDate를 활용한
+ HsPark95m closed this as complete don Dec 9, 2024 같은 형식의 닫은 정보 쓰기
+
+
+4. (고난도작업) 이슈 권한 (해당이슈에 참여한 프로젝트의 인원만 이슈 등록 가능하게 설정)
+비권한자 이슈보기는 가능하지만 (코맨트 달기 및 close 불가)
+(예시 깃허브 : https://github.com/icepeng/loa-calc/issues/15)
+
+5. 프로젝트 참여자 업무배정 및 관리 (Task관리?)
+(각 프로젝트의 Task생성 및 담당자 배치 기능 예상)
+
+(클리어)6. 이슈 및 코멘트 수정 기능
+
+연혁 탭
+
+1. pj 테이블 is_finished true 인 pj들 활용
+
+2. 진행된 프로젝트
+ 프로젝트명 - 프로젝트 내용 - 프로젝트 기간
