@@ -1,0 +1,16 @@
+01.20
+*수정됨
+리액트 -  App.js, BoardGetList.js, BoardRead.js,  App.css, Pages.css, Board.css
+
+01.21
+*수정됨*
+리액트 -  App.js, Board.js, BoardManagement.js
+스프링 -PjBoardController.java, PjBoardService.java, PjBoardServiceImpl.java, PjBoardMapper.java, PjBoardMapper.xml, CompanyBoardDto.java
+SQL - company_board(테이블 수정)
+
+*추가됨*
+SQL - trendingPeriod (테이블 추가)
+
+
+게시판 쪽 관련은 아마 합치는데 문제가 없지만 
+App.js 랑 css파일들은 충돌 이슈가 있을 수도....?
