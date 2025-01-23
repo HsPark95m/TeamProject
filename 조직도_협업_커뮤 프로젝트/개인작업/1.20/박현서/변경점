@@ -1,5 +1,0 @@
-리액트) ProjectManagement.js ProjectList.js
-
-스프링) ProjectManagementDto, PjMapper.xml
-
-SQL) project_list테이블 칼럼 변경 (drop후 create가 빠를듯)
