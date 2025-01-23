@@ -1,5 +1,10 @@
 리액트) ProjectManagement.js ProjectList.js
+        IssueList.js, IssueRead.js, Issue.css(추가)
 
 스프링) ProjectManagementDto, PjMapper.xml
 
 SQL) project_list테이블 칼럼 변경 (drop후 create가 빠를듯)
+
+프로젝트 관리 탭에서 프로젝트 추가 시 달력에서 날짝를 직접선택하는 방식으로 변경 (Sql쪽 및 스프링도 맞춰서 수정)
+
+이슈 리스트, 이슈 읽기 창 (댓글 및 댓글수정*작성포함) CSS작업
