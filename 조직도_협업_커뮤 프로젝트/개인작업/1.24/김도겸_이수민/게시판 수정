@@ -1,0 +1,28 @@
+게시판 메인 페이지 수정
+App.js
+function handlePageNavigation(categoryName, option){};에 if문 추가
+
+if(option === '게시판'){ {/* 25_01_24 (L.s.m) 여기 추가, 수정 */}
+      setBoardCategory('');
+    }
+카테고리 처리 함수 추가
+카테고리 선택 처리 함수 function handleCategorySelect(categoryName) 추가
+
+{'board' === page && <Board page={PageRoad} readPage={readPageNo} handleCategorySelect={handleCategorySelect} selectedCategory={boardCategory} loginRank={loginRank}/>}{/* 25_01_24 (L.s.m) 여기수정 */}
+
+Board.js
+categoryList 데이터를 순회하여 각각의 카테고리를 렌더링하고 클릭 시 선택된 카테고리(selectedCategory)를 업데이트
+
+조건부 렌더링
+선택된 카테고리(selectedCategory)가 있을 경우, 해당 카테고리에 맞는 게시글 목록을 BoardGetList 컴포넌트를 통해 표시합니다
+
+Props 전달
+BoardGetList 컴포넌트에 필요한 데이터(category, page, readPage, loginRank)를 Props로 전달하여 재사용성을 높였습니다.
+
+BoardGetList.js
+useEffect(() => {
+        axiosGetPostList();
+    }, [category, searchWord, searchTag]); //(25.01.24)category 추가
+
+총 수정 파일
+App.js, Board.js, BoardGetList, ProjectHistoryPage.js, Pages.css, Board.css 
