@@ -1,0 +1,18 @@
+작업내용
+1. 프로필사진 변경화면 배치 형태 깔끔하게 수정 (Pages.css)
+
+2. projectList 프로젝트 참여자 혹은 Rank=0인 사람만 이슈등록 버튼이 노출되게 설정
+   이슈리스트는 기존처럼 해당프로젝트있을시 보여짐 (ProjectList.js)
+
+3. IssueList 제목 옆 해당 이슈라벨이 정상표기가 안되던 오류 수정 및 우하단 프로젝트현황탭 돌아가는 버튼 추가 (IssueList.js, Issue.css)
+
+4. 조직도 스타일 적용 (가장 단순한 형태로 css 적용) (현재 모든 크기가 고정픽셀이라 5개 이상 넘어가면 4개씩보여진후 그 밑에 추가로 쌓이는 형태) (OrganizationChart.js, Pages.css)
+
+변경된곳 : ProjectList.js IssueList.js OrganizationChart.js Pages.css Issue.css
+
+작업예정내용
+1. 이슈 쓰기 및 이슈 닫기 권한 설정
+
+2. 이슈 읽기 css 작업 예정 (이슈내용 강조 및 comment처럼 사각형 탭으로 변경예정)
+
+3. 프로젝트 관리탭 css 작업 예정 (프로젝트 추가 탭 별도 분리예정)
