@@ -1,0 +1,12 @@
+**servlet-context.xml 설정 추가**
+xmlns:task="http://www.springframework.org/schema/task"
+(라인 넘버 7)
+http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd 
+(라인 넘버 11)
+<task:annotation-driven />
+(라인 넘버 62)
+
+**글쓰기에 이미지 삭제 시간 설정 코드 동작 테스트 하는 법**
+ImageUploadController.java
+기존의 코드(바로 윗줄에 있음)를 
+주석 처리 되어 있는 ★★★코드 동작 테스트★★★ 로 교체 후 실행 해 볼 것
