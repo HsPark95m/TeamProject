@@ -1,1 +1,47 @@
+- **작업목록**  
+    **[리액트]**    
+    ● 게시판 관련 수정(관리자 쪽 읽기 새로고침 이슈, 관리자 쪽 카테고리 관련 이슈, 글 삭제 관련 이슈, 게시판 메인 페이지 디자인 수정)        
+        -App.js         
+        - const [adminAccess, setAdminAccess] = useState(false); 상태변수 제거
+        - readPageNo 메서드 수정 (라인넘버 123)
+        - BoardRead 컴포넌트 매개변수 수정 (라인넘버 260)
+        - PageRoad 메서드 전체 세션 초기화 코드 제거(라인넘버 48)
+        
+        -BoardRead.js         
+        - 삼항연산자 코드 수정
+        
+        -BoardManagement.js         
+        - filter추가 (전체글 카테고리를 제외하도록 코드 수정 )
+        
+        -BoardRead.js         
+        - 삭제 시 이동되는 주소 ‘board’ 로 변경
+        
+        -BoardGetList.js         
+        - 메인 페이지 외에는 해당 게시판 글 만 나오도록 수정
+    ● 관리자 페이지 분리        
+        -App.js         
+        - const [admin, setAdmin] = useState(false); 상태변수 추가 (라인넘버 30)
+        - adminModeSelect 메서드 추가 (라인넘버 37)
+        - categories, pageMapping 변수 수정 (라인넘버 136~154)
+        - JSX 반환 코드 수정 (라인넘버 194, 197, 210~239, 265)
+        
+        -App.css        
+        - 디자인 관련 코드 추가
+    ● 조직도 페이지 디자인 추가        
+        -Pages.css         
+        - 외곽선 + 그림자    
 
+    **[스프링]**    
+    ● 관리자 페이지 분리        
+        -PjMapper.xml        
+        - getEmployeeList 수정 (관리자 계정은 사원 리스트로 불러오지 않도록)
+    
+    **[SQL]**    
+    ●관리자 계정 별도 추가     
+    ex) INSERT INTO `company_member` VALUES ('김주딱', 'admin', '00', '관리자', 0, '', 1);    
+
+------------------------------------요약---------------------------------------------------------------------
+    **[수정된 파일]**    
+    리액트 - App.js, BoardRead.js , BoardManagement.js, BoardRead.js, BoardGetList.js, App.css, Pages.css     
+    스프링 - PjMapper.xml
+    sql - 관리자 계정 추가   ex) INSERT INTO `company_member` VALUES ('김주딱', 'admin', '00', '관리자', 0, '', 1); 
