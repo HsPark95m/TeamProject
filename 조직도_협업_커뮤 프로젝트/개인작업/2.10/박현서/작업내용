@@ -1,0 +1,5 @@
+1. 프로젝트 관리탭 드래그드롭 참여가 안되던 오류 수정 (ProjectList.js)
+
+2. 마감된 프로젝트 탭 제작 (FinishedProjectList.js, PjServiceImpl.java)
+
+3. 이슈리스트에서 마감된 프로젝트일 시 new Issue 버튼이 안나오게 수정 (IssueList.js, PjController.java)
