@@ -1,2 +1,69 @@
 수정파일
-App.js, 
+App.js, Header.js, Footer.js, Mypage.js, EmployeeInformation.js, ModifyProfilePhoto.js, ModifyPwd.js, 
+
+Css
+App.css, Page.css
+
+#작업내용#
+로그인,마이페이지, Footer css작업
+로그인 : 기존 버튼 형식에서 드롭다운 형식으로 변경, 프로필 사진 로그인시 보이게 수정
+
+Footer : 로고 색깔 흰색으로 변경 하고 인스타그램, 페이스북, 트위터, 깃허브 아이콘 추가
+
+마이페이지 : 마이페이지에서 사진 변경에서 기존 프로필 이미지에서 새로운 사진으로 교체 프로필 이미지 갯수 5->8로 변경 추가로 마이 페이지에서 로그아웃만 가능하게 수정
+
+-App.js-
+<로그인 드롭다운>
+const [showLoginDropdown, setShowLoginDropdown] = useState(false); 로그인 드롭다운 추가
+function logout() 에 setShowLoginDropdown(false); 드롭다운 닫기 메뉴 추가
+
+로그인 드롭다운 처리 함수 추가
+function handleLoginDropdownClick()
+
+return에 로그인후 마이페이지, 로그아웃 드롭박스 메뉴에 admin으로 로그인시 일반, 관리 버튼 코드 추가
+
+<로그인 프로필 이미지>
+const [profilePhoto, setProfilePhoto] = useState(null); 프로필 사진 추가
+function handleLogin()에 setProfilePhoto(loginInfo.profile_photo); 추가
+const getProfilePhoto = (photo) => {}; 추가 + 이미지 1~8까지 새로 추가
+
+-Header.js-
+images폴더에 logout_white.png이미지 추가
+
+import logout_image from '../images/logout_white.png';
+return에서 
+<img id='logout_image' src={logout_image} alt='logout_white.png' />
+<div className='mypage_logout_button' onClick={logout}>로그아웃</div> 코드 추가
+
+-Footer.js-
+<인스타그램, 페이스북, 트위터, 깃허브 아이콘 링크 추가>
+터미널에서 npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons 다운 받아서 아이콘 사용
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebook, faXTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'; import추가
+<div/>에 인스타그램, 페이스북, 트위터, 깃허브 아이콘 링크 추가
+
+-Mypage.js-
+<프로필 사진 추가>
+const [profilePhoto, setProfilePhoto] = useState(null); 프로필 사진 추가
+function handleLogin()에 setProfilePhoto(loginInfo.profile_photo); 추가
+const getProfilePhoto = (photo) => {}; 추가 + 이미지 1~8까지 새로 추가
+
+<마이페이지에도 Footer 추가>
+import Footer from '../utilPages/Footer'; footer추가
+return끝에 <Footer /> {/* Footer 추가 */} 추가
+
+-EmployeeInformation.js-
+프로필 이미지 1~8 import 경로 추가하고 function EmployeeInformation()에 6~8추가 수정
+
+-ModifyProfilePhoto.js-
+프로필 이미지 1~8 import 경로 추가하고 return에 6~8 이미지 추가 수정
+
+-ModifyPwd.js-
+<비밀번호 변경에도 Footer 추가>
+import Footer from '../utilPages/Footer'; footer추가
+return끝에 <Footer /> {/* Footer 추가 */} 추가
+
+CSS 수정
+App.css, Page.css 여러가지 수정
+
+
