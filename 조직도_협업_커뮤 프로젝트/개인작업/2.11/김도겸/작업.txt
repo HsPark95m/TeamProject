@@ -1,1 +1,23 @@
+▶ 프로젝트 관리 ‘admin’ 계정만 조작 가능 하도록 변경(일반,관리 모드 분리?) 
+    
+    ●ProjectManagement.js     
+    - 기존의 loginRank에 따른 권한 부여 방식을 adminModeSelect === true 로 변경
+    (권한 부여 방식 수정 될수도...?)
+    
+    ●ProjectList.js     
+    - ProjectList 컴포넌트의 매개변수 loginRank 삭제
+    - 기존의 loginRank에 따른 권한 부여 방식을 loginId === ‘admin’ 으로 변경
+    (권한 부여 방식 수정 될수도...?)
+    
+    ●App.js     
+    - ProjectManagement 컴포넌트의 매개변수 loginRank 삭제
+    - ProjectManagement 컴포넌트에 매개변수 adminModeSelect 추가 (라인넘버 254,255)
 
+▶ 게시판 관리 페이지 일부 코드 수정 
+    
+    ●BoardManagement.js     
+    - 수정된 게시물의 날짜에  ‘*수정됨’ 표시 제거
+
+------------------------요약----------------------------------------------------------------------
+**[수정된 파일]**
+리액트 - App.js, ProjectManagement.js, ProjectList.js, BoardManagement.js
