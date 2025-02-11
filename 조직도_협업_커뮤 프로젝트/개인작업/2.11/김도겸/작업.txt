@@ -10,7 +10,7 @@
     (권한 부여 방식 수정 될수도...?)
     
     ●App.js     
-    - ProjectManagement 컴포넌트의 매개변수 loginRank 삭제
+    - ProjectManagement 컴포넌트의 매개변수 loginRank 삭제    (라인넘버 254,255)
     - ProjectManagement 컴포넌트에 매개변수 adminModeSelect 추가 (라인넘버 254,255)
 
 ▶ 게시판 관리 페이지 일부 코드 수정 
