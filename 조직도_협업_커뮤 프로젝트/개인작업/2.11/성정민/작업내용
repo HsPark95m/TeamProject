@@ -1,0 +1,42 @@
+1. index.js에 <Route path="/developing" element={<DevelopingPage/>} /> 추가
+
+2.  Pages.css에 스타일 추가
+
+.developing-container {
+    width: 100%;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;  /* #f5f5f5에서 white로 변경 */
+    padding: 20px 0;
+}
+
+.developing-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.developing-image {
+    max-width: 500px;  /* 300px에서 500px로 증가 */
+    width: 80%;        /* 반응형을 위해 비율도 추가 */
+    height: auto;
+    margin-bottom: 30px;  /* 여백도 조금 더 추가 */
+}
+
+.developing-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.developing-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+3. utilPage폴더에 content_ready_img.png 추가
+4. pages폴더에 DeveloplingPage.js 추가
+
+<Link to="/developing"><button className="profile-btn">개발중</button></Link> 쓰시면 개발중 페이지로 날아갑니다. 이건 버튼 형식!
