@@ -40,3 +40,5 @@
 4. pages폴더에 DeveloplingPage.js 추가
 
 <Link to="/developing"><button className="profile-btn">개발중</button></Link> 쓰시면 개발중 페이지로 날아갑니다. 이건 버튼 형식!
+
+++ 로그인박스에 적용 안되는게 보여서 12일에 수정 예정
