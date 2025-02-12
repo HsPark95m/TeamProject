@@ -1,0 +1,40 @@
+부서
+0 관리자 1 사장 2 부장 3 차장 4 과장 5 대리 6 주임 7 사원 으로 두고 작업함.
+
+1. spring server pjserviceimpl에 changeposition 바뀜.
+switch (l.getPosition_rank()) {
+		case 2:
+			position = "부장";
+			break;
+		case 3:
+			position = "차장";
+			break;
+		case 4:
+			position = "과장";
+			break;
+		case 5:
+			position = "대리";
+			break;
+		case 6:
+			position = "주임";
+			break;
+		case 7:
+			position = "사원";
+			break;
+		}
+2. EmployeeManagement (사원 추가 다이얼로그 바뀜)
+3. EmployeePopup의 positions
+const positions = [
+        { value: '7', label: '사원' },
+        { value: '6', label: '주임' },
+        { value: '5', label: '대리' },
+        { value: '4', label: '과장' },
+        { value: '3', label: '차장' },
+        { value: '2', label: '부장' },
+    ];
+로 바꿈
+
+4. Mypage.js의 랭크부분 <div className="info-row">직위 : {loginPosition}</div>로 바꿈 << mypage 랭크 직위로 바꾸기
+
+
+++ sql 작업은 게시판 댓글까지 완료. 공지게시판 안 뜨는 이슈 있음. 인기게시글도 따로 확인해봐야함.
