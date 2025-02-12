@@ -1,1 +1,30 @@
+▶ **작업목록**
+    
+    **[리액트]**    
+    - 메인 페이지 디자인 및 기타 수정        
+        ●App.js         
+        - 메인페이지 디자인 추가(텍스트는 거의 하드코딩)
+        
+        ●AutoPlay.js         
+        - 이미지 추가 및 슬라이드 설정 변경
+        
+        ●App.css        
+        - 디자인 코드 수정
+        
+        ●Board.css        
+        - 디자인 수정 (칸 밀리던거)
+        
+        ●Mypage.js         
+        - 랭크 → 직책으로 변경
+        
+        ●utilPages.css        
+        - 디자인 코드 수정
 
+    - public 설정 변경?
+       ●index.html (변경)
+        - <link rel="icon" href="%PUBLIC_URL%/nsd.ico" />
+        - <title>NEXSADAN</title>
+       ●NDS.ico 생성함 (홈페이지 로고)
+-----------------------------------요약----------------------------------------
+    **[수정된 파일]**    
+    리액트 - App.js, AutoPlay.js, Mypage.js, App.css, Board.css, utilPages.css
