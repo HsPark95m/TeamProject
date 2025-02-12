@@ -30,3 +30,5 @@
 -----------------------------------요약----------------------------------------
     **[수정된 파일]**    
     리액트 - App.js, AutoPlay.js, Mypage.js, App.css, Board.css, utilPages.css
+    **[추가된 파일]**
+    리액트 - ProjectProfile.js
