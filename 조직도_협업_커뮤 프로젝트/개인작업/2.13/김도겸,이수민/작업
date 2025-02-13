@@ -1,1 +1,19 @@
+- **작업목록**
+    
+    **[리액트]**    
+    ▶ 디자인 및 기타 오류 수정      
 
+        ●ProjectProfile.js         
+        - 개인 깃허브 링크 및 깃허브 이미지 아이콘 추가   
+
+        ●App.css        
+        - 디자인 코드 수정    
+
+        ●ProjectList.js        
+        - 드래그 오류 나던거 수정 (수정사항↓)
+        - onDrop({ company_id: employee.company_id, project_no: pjData.project_no });
+
+---------------------------------------요약--------------------------------------------------
+       
+    **[수정된 파일]**    
+    리액트 - ProjectProfile.js, ProjectList.js, App.css
