@@ -1,1 +1,27 @@
+- **작업목록**
+    
+    **[리액트]**    
+    ▶ API 명세서 관련 코드 수정
+        
+        ●API 명세서에 맞게 HTTP 메서드 수정 (axios.??? ←여기)        
+        - 참고 명세서 URL(https://www.notion.so/API-199e8e85be7580b9b49af9252edf7036)
+        - (API명세서 내용 편집 할 부분 있을 경우 편집 가능 하도록 설정해뒀음)
+    
+    **[스프링]**    
+    ▶ API 명세서 관련 코드 수정
+        
+        ●servlet-context.xml (설정 추가)        
+        - <mvc:mapping path="/**"
+        allowed-origins="[http://localhost:3000](http://localhost:3000/)"
+        allowed-methods="GET, POST, PUT, PATCH, DELETE"
+        allowed-headers="Content-Type, Authorization"
+        allow-credentials="true" />
+        (PATCH 추가됨)
+    
+--------------------------요약---------------------------------
+    
+    **[수정된 파일]**
 
+    리액트 - API 명세서 주소 참고
+    
+    스프링 - servlet-context.xml    
